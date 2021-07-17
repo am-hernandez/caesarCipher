@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Caesar Cypher</title>
+  </head>
+  <body>
+    <header>
+      <h1>Caesar Cypher and Decypher</h1>
+    </header>
+    <main>
+      <div class="container" id="caesarCypher">
+        <div class="form_side">
+        <h2>Cypher</h2>
+        <form id="cypher_form">
+          <label for="secret">Secret:</label><br>
+          <textarea name="secret" form="cypher_form" id="secret"></textarea>
+          <label for="shift">Shift:</label><br>
+          <input type="number" id="shift"><br><br>
+          <input id="submit_cypher" type="button" value="Submit" class="submit_button">
+        </form>
+        </div>
+        <div class="result">
+          <h2>Result</h2>
+          <textarea id="encrypted"></textarea>
+        </div>
+      </div>
+      <div class="container" id="caesarDecypher">
+        <div class="form_side">
+        <h2>Decypher</h2>
+        <form id="decypher-form">
+          <label for="cypher">Cypher:</label><br>
+          <textarea name="cypher" form="decypher_form" id="cypher"></textarea>
+          <label for="key">Key:</label><br>
+          <input type="number" id="key"><br><br>
+          <input id="submit_decypher" type="button" value="Submit" class="submit_button">
+        </form>
+        </div>
+        <div class="result">
+          <h2>Result</h2>
+          <textarea id="decrypted"></textarea>
+        </div>
+      </div>
+    </main>
+    <footer>
+      developed by A.M.Hernandez 2021
+    </footer>
+    <script src="js/caesar.js"></script>
+  </body>
+</html>
